@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 span{
   display: inline-block;
@@ -18,6 +19,7 @@ main{
 }
 .logoTitle{
   position: relative;
+  margin: 15px 0;
 }
 .logoTitle img{
   position: absolute;
@@ -28,6 +30,8 @@ h1{
   text-align: center;
   margin: 20px 0;
   color: white;
+  letter-spacing: 1px;
+
 }
 #input{
   display: flex;
@@ -58,13 +62,20 @@ label{
   width: 100%;
   text-align: center;
   color: #B70127;
+  font-size: 20px;
 }
 input{
   font-size: 15px;
   border-radius: 20px;
   border: 1px solid #B70127;
   padding: 4%;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px 3px 1px #DDDDDD;
 
+}
+input:focus{
+  background-color: #B70127;
+  color: white;
 }
 #inputButton{
   width: 100%;
@@ -76,17 +87,23 @@ button{
   color: #B70127;
   margin-right: 6px;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px #660217;
+  background-color: white;
+
 }
 button:hover{
   background-color: #B70127;
   color: white;
+  box-shadow: 3px 3px 3px 1px #DDDDDD;
 }
+
 h2{
   text-align: center;
   margin: 20px 0;
   font-size: 30px;
   color: white;
-
+  letter-spacing: 1px;
 }
 #output{
   display: flex;
@@ -99,7 +116,8 @@ h2{
   border: 1px solid #DDDDDD;
   background-color: #F8F8F8;
   border-radius: 20px;
-
+  box-shadow: 3px 3px 3px 1px;
+  transition: 0.2s;
 }
 .infoBiglietto{
   display: flex;
@@ -107,20 +125,29 @@ h2{
   justify-content: space-around;
   border-bottom: 1px solid #B70127;
   border-top: 1px solid #B70127;
+  padding: 2% 0;
 }
 .codiceQr{
-  width: 70px;
+  width: 100px;
 }
 .codiceQr img{
   width: 100%;
 }
 .passeggero{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  background-color: rgba(183, 1, 39, 1);
-
+  background-color: rgba(183, 1, 39, 0.4);
+  height: 100px;
+  width: 300px;
+}
+.infoName{
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-between;
+}
+.outputName{
+  padding-top: 15px;
 }
 .offerta,
 .treno,
@@ -131,6 +158,7 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .passeggero,
 .offerta span,

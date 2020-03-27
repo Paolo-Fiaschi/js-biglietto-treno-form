@@ -52,7 +52,6 @@ generaButton.addEventListener("click",
       prezzoFinale = prezzoStandard;
       sconto = "Biglietto Standard";
     }
-
     // numero carrozza posto e treno
     carrozza = Math.floor(Math.random()*10 +1);
     posto = Math.floor(Math.random()*50) +1;
