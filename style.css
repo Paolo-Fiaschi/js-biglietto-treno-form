@@ -16,6 +16,14 @@ main{
   background-color: #B70127;
   height: 100vh;
 }
+.logoTitle{
+  position: relative;
+}
+.logoTitle img{
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
 h1{
   text-align: center;
   margin: 20px 0;
@@ -46,7 +54,33 @@ h1{
   justify-content: space-around;
   align-items: center;
 }
+label{
+  width: 100%;
+  text-align: center;
+  color: #B70127;
+}
+input{
+  font-size: 15px;
+  border-radius: 20px;
+  border: 1px solid #B70127;
+  padding: 4%;
 
+}
+#inputButton{
+  width: 100%;
+  text-align: center;
+}
+button{
+  font-size: 20px;
+  padding: 7px;
+  color: #B70127;
+  margin-right: 6px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #B70127;
+  color: white;
+}
 h2{
   text-align: center;
   margin: 20px 0;
@@ -61,7 +95,7 @@ h2{
   width: 80%;
   margin: 0 auto;
   align-items: center;
-  height: 200px;
+  height: 250px;
   border: 1px solid #DDDDDD;
   background-color: #F8F8F8;
   border-radius: 20px;
@@ -71,10 +105,39 @@ h2{
   display: flex;
   width: 100%;
   justify-content: space-around;
+  border-bottom: 1px solid #B70127;
+  border-top: 1px solid #B70127;
 }
 .codiceQr{
   width: 70px;
 }
 .codiceQr img{
   width: 100%;
+}
+.passeggero{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: rgba(183, 1, 39, 1);
+
+}
+.offerta,
+.treno,
+.carrozza,
+.posto,
+.prezzo{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.passeggero,
+.offerta span,
+.treno span,
+.carrozza span,
+.posto span,
+.prezzo span{
+  font-weight: bolder;
+  font-size: 20px;
 }

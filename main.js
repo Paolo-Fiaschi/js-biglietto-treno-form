@@ -44,10 +44,10 @@ generaButton.addEventListener("click",
     // condizioni costo del biglietto
     if (dateAge < 18){
       prezzoFinale = prezzoUnder;
-      sconto = "Biglietto Under";
+      sconto = "Biglietto Under -20%";
     } else if (dateAge > 65){
       prezzoFinale = prezzoOver;
-      sconto = "Biglietto Over";
+      sconto = "Biglietto Over -40%";
     } else{
       prezzoFinale = prezzoStandard;
       sconto = "Biglietto Standard";
