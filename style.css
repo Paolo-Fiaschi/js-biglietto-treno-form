@@ -1,0 +1,80 @@
+/* regole generali */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+span{
+  display: inline-block;
+}
+
+main{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #B70127;
+  height: 100vh;
+}
+h1{
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+#input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  height: 200px;
+  border: 1px solid #DDDDDD;
+  background-color: #F8F8F8;
+}
+#inputDate{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.containerName,
+.containerKm,
+.containerAge{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  color: white;
+
+}
+#output{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  height: 200px;
+  border: 1px solid #DDDDDD;
+  background-color: #F8F8F8;
+  border-radius: 20px;
+
+}
+.infoBiglietto{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.codiceQr{
+  width: 70px;
+}
+.codiceQr img{
+  width: 100%;
+}

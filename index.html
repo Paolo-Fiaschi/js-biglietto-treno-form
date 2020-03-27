@@ -7,74 +7,87 @@
     <title>Document</title>
 </head>
 <body>
+  <main>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-  <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <!-- INPUT UTENTE --------------------------------------->
+    <div id="input">
 
-  <!-- INPUT UTENTE --------------------------------------->
-  <div id="input">
+      <!-- DATI DI INPUT ------------------------->
+      <div id="inputDate">
+        <div class="containerName">
+          <label for="name">Nome e Cognome</label>
+          <input type="text" name="name" id="name" placeholder="Nome e cognome" value="">
+        </div>
+        <div class="containerKm">
+          <label for="km">Km da percorrere</label>
+          <input type="number" name="km" id="km" placeholder="Km da percorrere">
+        </div>
+        <div class="containerAge">
+          <label for="age">Età</label>
+          <input type="number" name="age" value="" id="age">
+        </div>
 
-    <!-- DATI DI INPUT ------------------------->
-    <div id="inputDate">
-      <label for="name">Nome e Cognome</label>
-      <input type="text" name="name" id="name" placeholder="Nome e cognome" value="">
-      <label for="km">Km da percorrere</label>
-      <input type="number" name="km" id="km" placeholder="Km da percorrere">
-      <label for="age">Età</label>
-      <input type="number" name="age" value="" id="age">
 
-      <!-- <select name="age" id="age">
+        <!-- <select name="age" id="age">
         <option value="">Seleziona età</option>
         <option id="minorenne" value="">Minorenne</option>
         <option id="maggiorenne" value="">Maggiorenne</option>
         <option id="over" value="">Over 65</option>
       </select> -->
+      </div>
+
+      <!-- BOTTONI DI INPUT ----------------------->
+      <div id="inputButton">
+        <button id="genera" type="button" name="button">
+          Genera
+        </button>
+        <button id="annulla" type="button" name="button">
+          Annulla
+        </button>
+      </div>
     </div>
 
-    <!-- BOTTONI DI INPUT ----------------------->
-    <div id="inputButton">
-      <button id="genera" type="button" name="button">
-        Genera
-      </button>
-      <button id="annulla" type="button" name="button">
-        Annulla
-      </button>
+    <h2>IL TUO BIGLIETTO</h2>
+
+    <!-- OUTPUT UTENTE ---------------------------------------->
+    <div id="output">
+      <h3>DETTAGLI PASSEGGERO</h3>
+      <div class="infoBiglietto">
+        <div class="passeggero">
+          <span>Nome Passeggero</span>
+          <div id="outputName"></div>
+          <div class="codiceQr">
+            <img src="https://qrcode.tec-it.com/API/QRCode?data=smsto%3A555-555-5555%3AGeneratore+TEC-IT+di+codici+QR+&method=download" alt="">
+          </div>
+        </div>
+        <div class="offerta">
+          <span>Tipo di Biglietto</span>
+          <div id="outputSconto"></div>
+        </div>
+        <div class="treno">
+          <span>Numero Treno</span>
+          <div id="outputTreno"></div>
+        </div>
+        <div class="carrozza">
+          <span>Carrozza</span>
+
+          <div id="outputCarrozza"></div>
+        </div>
+        <div class="posto">
+          <span>Posto</span>
+
+          <div id="outputPosto"></div>
+        </div>
+        <div class="prezzo">
+          <span>Costo Biglietto</span>
+          <div id="outputPrice"></div>
+        </div>
+
+      </div>
 
     </div>
-  </div>
-
-  <h2>IL TUO BIGLIETTO</h2>
-
-  <!-- OUTPUT UTENTE ---------------------------------------->
-  <div id="output">
-    <div id="outputPrice">
-
-
-    </div>
-    <div id="outputName">
-
-    </div>
-    <div id="outputSconto">
-
-    </div>
-    <div id="outputTreno">
-
-    </div>
-    <div id="outputCarrozza">
-
-    </div>
-    <div id="outputPosto">
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-
+  </main>
   <script src="main.js"></script>
 </body>
 </html>

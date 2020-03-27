@@ -86,5 +86,3 @@ annullaButton.addEventListener("click",
 
 
 )
-// refresh
-location.reload(forceGet);
