@@ -22,6 +22,8 @@ generaButton.addEventListener("click",
     dateName = nameU.value;
     dateKm = kmU.value;
     dateAge = ageU.value;
+    document.getElementById('output').style.opacity = 1;
+
 
     // calcolo del costo del biglietto
     // var per prezzo biglietto al km
@@ -62,6 +64,7 @@ generaButton.addEventListener("click",
     // stampo in console
     console.log(dateName,dateKm, dateAge );
 
+
     document.getElementById('outputPrice').innerHTML = prezzoFinale.toFixed(2) + " euro";
     document.getElementById('outputName').innerHTML = dateName;
     document.getElementById('outputSconto').innerHTML = sconto;
@@ -75,16 +78,13 @@ generaButton.addEventListener("click",
 annullaButton.addEventListener("click",
 
   function(){
-    nameU = NaN;
-    dateKm = "";
-    dateAge = "";
-
-
-
-
-
-
+    nameU.value = "";
+    kmU.value = "";
+    ageU.value = "";
+    document.getElementById('output').style.opacity = 0;
   }
 
 
 )
+// refresh
+location.reload(forceGet);
