@@ -71,6 +71,7 @@ generaButton.addEventListener("click",
       prezzoFinaleStampato = prezzoFinale;
     }
     console.log(prezzoFinaleStampato);
+
     // numero carrozza posto e treno
     carrozza = Math.floor(Math.random()*10 +1);
     posto = Math.floor(Math.random()*50) +1;
@@ -90,13 +91,15 @@ generaButton.addEventListener("click",
       document.getElementById('outputTreno').innerHTML = treno;
       document.getElementById('outputCarrozza').innerHTML = carrozza;
       document.getElementById('outputPosto').innerHTML = posto;
+      document.getElementById('prenota').style.opacity = 1;
+
     }else {
-      document.getElementById('outputPrice').innerHTML = "";
-      document.getElementById('outputName').innerHTML = "";
-      document.getElementById('outputSconto').innerHTML = "";
-      document.getElementById('outputTreno').innerHTML = "";
-      document.getElementById('outputCarrozza').innerHTML = "";
-      document.getElementById('outputPosto').innerHTML = "";
+      // document.getElementById('outputPrice').innerHTML = "";
+      // document.getElementById('outputName').innerHTML = "";
+      // document.getElementById('outputSconto').innerHTML = "";
+      // document.getElementById('outputTreno').innerHTML = "";
+      // document.getElementById('outputCarrozza').innerHTML = "";
+      // document.getElementById('outputPosto').innerHTML = "";
       document.getElementById('output').style.opacity = 0;
     }
   }
@@ -111,6 +114,7 @@ annullaButton.addEventListener("click",
     ageU.value = "";
     classU.value = "";
     document.getElementById('output').style.opacity = 0;
+    document.getElementById('prenota').style.opacity = 0;
   }
 
 
