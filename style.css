@@ -18,20 +18,23 @@ main{
   height: 100vh;
 }
 .logoTitle{
-  position: relative;
-  margin: 15px 0;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: start;
 }
-.logoTitle img{
+/* .logoTitle img{
   position: absolute;
   top: 0;
-  left: 10%;
-}
+  left: 9%;
+} */
 h1{
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
   color: white;
   letter-spacing: 1px;
-
+  font-size: 36px;
+  padding-left: 20px;
 }
 #input{
   display: flex;
@@ -40,7 +43,7 @@ h1{
   width: 80%;
   margin: 0 auto;
   align-items: center;
-  height: 200px;
+  height: 300px;
   border: 1px solid #DDDDDD;
   background-color: #F8F8F8;
 }
@@ -51,7 +54,8 @@ h1{
 }
 .containerName,
 .containerKm,
-.containerAge{
+.containerAge,
+.containerClass{
   display: flex;
   flex-direction: column;
   height: 80px;
@@ -64,18 +68,22 @@ label{
   color: #B70127;
   font-size: 20px;
 }
-input{
+input,
+#age,
+#class{
   font-size: 15px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid #B70127;
   padding: 4%;
   letter-spacing: 1px;
   box-shadow: 3px 3px 3px 1px #DDDDDD;
-
 }
 input:focus{
   background-color: #B70127;
   color: white;
+}
+#class{
+  padding: 8%;
 }
 #inputButton{
   width: 100%;
@@ -118,6 +126,7 @@ h2{
   border-radius: 20px;
   box-shadow: 3px 3px 3px 1px;
   transition: 0.2s;
+  opacity: 0;
 }
 .infoBiglietto{
   display: flex;
