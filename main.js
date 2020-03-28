@@ -101,6 +101,7 @@ generaButton.addEventListener("click",
       // document.getElementById('outputCarrozza').innerHTML = "";
       // document.getElementById('outputPosto').innerHTML = "";
       document.getElementById('output').style.opacity = 0;
+      alert('Controllare i dati inseriti');
     }
   }
 );

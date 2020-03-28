@@ -21,13 +21,8 @@ main{
   display: flex;
   width: 80%;
   margin: 0 auto;
-  align-items: start;
+  justify-content: space-between;
 }
-/* .logoTitle img{
-  position: absolute;
-  top: 0;
-  left: 9%;
-} */
 h1{
   text-align: center;
   margin: 40px 0;
@@ -35,6 +30,7 @@ h1{
   letter-spacing: 1px;
   font-size: 36px;
   padding-left: 20px;
+  width: 100%;
 }
 #input{
   display: flex;
@@ -90,7 +86,7 @@ input:focus{
   text-align: center;
   display: flex;
   margin: 0 auto;
-  justify-content: flex-end;
+  justify-content: center;
 }
 button{
   font-size: 20px;
